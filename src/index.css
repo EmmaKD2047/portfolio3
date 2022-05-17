@@ -1,0 +1,287 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*Hero Section Styles*/
+.hero{
+  color: white;
+  position: relative;
+}
+
+.hero::after{
+  content: '';
+  position: absolute;
+  background: linear-gradient(
+      rgb(0 0 0 / 0),
+      rgb(0 0 0 / .4)
+  );
+  z-index: 1;
+  inset: 0;
+}
+
+/*Navbar Styles*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.kelogo{
+  width: 50px;
+  height: 50px;
+}
+
+#home{
+  background-color: #7d01a8;
+  padding: 7px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.otherlinks{
+  padding-top: 8px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.otherlinks::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7d01a8;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.otherlinks:hover::after{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.links ul{
+  list-style-type: none;
+  display: flex;
+  margin-top: 10px;
+}
+
+.links ul li{
+  margin: 0 20px 0 20px;
+}
+
+/*Profile Card Styles*/
+.profilecard{
+  height: 559px;
+}
+
+.info{
+  padding-top: 200px;
+  text-align: center;
+}
+
+a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.arrow {
+  text-align: center;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*Projects Styles*/
+.projects{
+  height: minmax(500px, auto)
+}
+
+.projecttitle{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.projectmockups{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 100px 0;
+  text-align: center;
+}
+
+.mockups{
+  width: 350px;
+  height: 230px;
+  margin: 20px 20px 0 20px;
+  position: relative;
+  isolation: isolate;
+  background-size: cover;
+  color: white;
+  padding-top: 150px;
+  padding-left: 20px;
+  transition: 0.2 ease-in-out;
+}
+
+.mockups:hover{
+  transform: scale(1.01);
+}
+
+.mockups img{
+  width: 100%;
+  height: 100%;
+}
+
+.mockups::before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(
+      rgb(0 0 0 / 0),
+      rgb(0 0 0 / .9)
+  );
+  z-index: -1;
+  inset: 0;
+}
+
+.one{
+  background-image: url(../src/meet.jpg);
+}
+
+.two{
+  background-image: url(../src/PP.jpg);
+}
+
+.three{
+  background-image: url(../src/IP.png);
+}
+
+.four{
+  background-image: url(../src/Blog\ Template.png);
+}
+
+/*About Me Styles*/
+.about{
+  text-align: center;
+  height: 500px;
+  background-color: #fbecff;
+}
+
+#aboutmetitle{
+  padding: 120px 0 50px 0;
+}
+
+.about p{
+  margin-bottom: 50px;
+}
+
+.resumebtn{
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #7d01a8;
+  color: white;
+  border: none;
+  width: 170px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Skills Section Styles*/
+#skillstitle{
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+.skill-icons{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 150px 0 150px 0;
+  width: 100%;
+}
+
+.skill-icon img{
+  width: 40px;
+}
+
+/**/
+.meetmodal{
+  background-color: black;
+  width: 500px;
+  display: flex;
+  display: none;
+}
+
+.meetmodal img{
+  width: 100%;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 770px) {
+  div#aboutmesection p{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  div.links, div.socials{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.info{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 397px) {
+  div.about{
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  div.mockups{
+    width: 320px;
+    margin-left: 27px;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  div.about{
+    height: 590px;
+  }
+}
