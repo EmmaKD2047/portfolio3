@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import HeroSection from './components/HeroSection';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';

@@ -36,11 +36,11 @@ const HeroSection = () => {
             </Fade>
         </div>
         <div className="arrow bounce">
-            <a className="fa fa-arrow-down fa-2x" href="#"></a>
+            <a className="fa fa-arrow-down fa-2x" href="#projectssection"></a>
             <p>Scroll Down For More</p>
         </div>
         <div className="socials">
-            <a href="https://twitter.com/kdcoding" target='_blank'><img src={twitter} alt="" style={{ width: '30px', position: 'fixed', right: '25px', bottom: '160px'}}/></a>
+            <a href="https://twitter.com/kdcoding"><img src={twitter} alt="" style={{ width: '30px', position: 'fixed', right: '25px', bottom: '160px'}}/></a>
             <a href="http://www.instagram.com/kdcoding/"><img src={instagram} alt="" style={{ width: '40px', position: 'fixed', right: '20px', bottom: '110px'}}/></a>
             <a href="https://www.linkedin.com/in/emmanuel-kadiri-930259b8/"><img src={linkedin} alt="" style={{ width: '30px', position: 'fixed', right: '25px', bottom: '70px'}}/></a>
             <a href="https://github.com/EmmaKD2047"><img src={github} alt="" style={{ width: '30px', position: 'fixed', right: '25px', bottom: '20px'}}/></a>
