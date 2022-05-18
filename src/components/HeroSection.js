@@ -36,7 +36,7 @@ const HeroSection = () => {
             </Fade>
         </div>
         <div className="arrow bounce">
-            <a className="fa fa-arrow-down fa-2x" href="#projectssection"></a>
+            <a href="#projectssection">&#x2193;</a>
             <p>Scroll Down For More</p>
         </div>
         <div className="socials">
